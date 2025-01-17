@@ -1,0 +1,50 @@
+@use "./components_style/header";
+@use "./components_style/main_content";
+@use "./components_style/content_container.scss";
+@use "./components_style/brands_list.scss";
+@use "./components_style/technic_list.scss";
+@use "./components_style/prices.scss";
+@use "./components_style/footer-container.scss";
+@use "./components_style/aside.scss";
+@use "./components_style/right_sidebar.scss";
+
+@use "adaptive";
+
+html {
+  position: relative;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+  background: rgb(248, 248, 248);
+}
+
+.closed {
+  display: none;
+}
+
+.opened {
+  display: block;
+}

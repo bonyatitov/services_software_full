@@ -1,0 +1,65 @@
+@use "fonts" as font;
+@use "mixins" as mix;
+
+
+.technic {
+  min-width: 320px;
+  padding: 15px 16px 24px 16px;
+  background: rgb(248, 248, 248);
+  border-bottom: 1px solid rgb(217, 255, 245);
+  .brands__heading {
+    margin-top: 15px;
+  }
+
+  .swiper {
+    height: 200px !important;
+  }
+  .slide-tech {
+    height: 160px !important;
+    background-position: right 16px bottom 16px;
+    background-color: white;
+    font-family: font.$medium;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  &__list-item {
+
+    @include mix.slide();
+    height: 160px;
+    background-position: right 16px bottom 16px;
+    background-color: white;
+    font-family: font.$medium;
+    font-size: 16px;
+    font-weight: 500;
+
+    &:hover {
+      box-shadow: 0px 5px 38px 9px rgba(34, 60, 80, 0.2) inset;
+      transition: 1s;
+    }
+  }
+
+  &__item-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__item-text {
+    display: block;
+    margin: 16px 16px;
+  }
+
+  .open-brands-btn {
+    @include mix.openBtn();
+  }
+
+}

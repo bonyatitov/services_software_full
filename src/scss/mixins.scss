@@ -1,0 +1,98 @@
+@use "fonts" as font;
+
+
+@mixin btn() {
+  width: 40px;
+  height: 40px;
+  padding: 12px 11px;
+  border: 0;
+  border-radius: 20px;
+  background-color: rgb(255, 62, 121);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(238, 16, 82);
+  }
+}
+
+@mixin verticalLine() {
+  width: 2px;
+  height: 32px;
+  background-color: rgb(234, 234, 234);
+  border-radius: 1px;
+}
+
+@mixin paragraphText() {
+  font-family: font.$regular;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: rgb(27, 28, 33);
+}
+
+@mixin slide () {
+  width: 250px;
+  height: 72px;
+  flex: 0 0 250px;
+  background-image: url(../img/ic_go.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 6px;
+}
+
+@mixin openBtn() {
+  width: 134px;
+  height: 24px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  &__image {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/arrow-visible.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__text {
+    font-family: font.$medium;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+@mixin btnOrder() {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 119px;
+  height: 32px;
+  padding: 4px 11px 4px 12px;
+  border: none;
+  border-radius: 16px;
+  background-color: rgb(255, 62, 121);
+  background-image: url(../img/order-btn-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  background-position: right 11px center;
+
+  font-family: font.$regular;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.20px;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(250, 94, 141);
+  }
+}

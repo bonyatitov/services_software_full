@@ -1,0 +1,33 @@
+@use "fonts" as font;
+@use "mixins" as mix;
+
+
+.footer-container {
+  min-width: 320px;
+  padding: 16px 4px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  &__item {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__text {
+    font-family: font.$medium;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(126, 126, 130);
+
+    a {
+      font-family: font.$medium;
+      font-size: 14px;
+      font-weight: 500;
+      color: rgb(126, 126, 130);
+    }
+  }
+}

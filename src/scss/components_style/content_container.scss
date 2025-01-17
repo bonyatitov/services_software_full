@@ -1,0 +1,67 @@
+
+@use "fonts" as font;
+@use "mixins" as mix;
+
+
+.content-container {
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgb(217, 255, 245);
+
+  &__text {
+    width: 288px;
+  }
+
+  &__paragraph-one {
+    @include mix.paragraphText();
+  }
+
+  &__paragraph-two--hidden-xs {
+    display: none;
+    @include mix.paragraphText();
+    margin-top: 16px;
+  }
+
+  &__paragraph-two--hidden-md {
+    display: none;
+  }
+
+  &__buttn-more {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+
+    font-family: font.$medium;
+    font-size: 16px;
+  }
+
+  &__button-more-img {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/button-read-all.svg);
+    background-position: center;
+  }
+
+  .main-img__block {
+    width: 320px;
+    height: 219px;
+    margin: 16px -27px 0 -27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 321px;
+      height: 219px;
+    }
+  }
+}
+
+
