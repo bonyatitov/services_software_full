@@ -847,7 +847,7 @@ header .dashboard .contacts-container .background-services {
     display: none;
   }
   .prices {
-    padding: 16px 8px;
+    padding: 16px;
     gap: 16px;
   }
   .prices__table {
