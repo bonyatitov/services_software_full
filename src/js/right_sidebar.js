@@ -6,9 +6,7 @@
   const buttonPhoneMenu = document.querySelector('.contacts__link-phone');
   const sidebar = document.querySelector('.sidebar-container');
   const buttonPhone = document.getElementById('button-phone');
-  console.log(rightContainer);
-  console.log(rightSidebar);
-
+  
   if (rightSidebar && rightContainer) {
     rightContainer.addEventListener('click', function(evt) {
       if (evt.target === this) {
