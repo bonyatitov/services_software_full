@@ -868,7 +868,7 @@ header .dashboard .contacts-container .background-services {
   }
 }
 @media (min-width: 400px) {
-  .brands .swiper {
+  .swiper {
     display: none;
   }
   .brands .brands__list--hidden-xs {
