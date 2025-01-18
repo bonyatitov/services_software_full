@@ -67,6 +67,5 @@ import './right_sidebar';
       btnTechImg.style.backgroundImage = 'url(../img/arrow-unvisible.svg)';
     }
   });
-
-
 })();
+
