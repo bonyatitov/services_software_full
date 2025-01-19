@@ -35,7 +35,7 @@ header .dashboard .menu-container {
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 168px;
+  min-width: 168px;
   height: 100%;
 }
 header .dashboard .menu-container__btn--hidden-lg {
@@ -591,7 +591,6 @@ header .dashboard .contacts-container .background-services {
   /* padding: 18px 0px 32px 0px; */
   background-color: white;
   padding-bottom: 32px;
-  z-index: 1;
 }
 
 .header {
@@ -816,6 +815,9 @@ header .dashboard .contacts-container .background-services {
 @media (min-width: 320px) {
   .menu-container__line--hidden-xs {
     display: block;
+  }
+  .menu-container h1 {
+    display: none;
   }
   .contacts-container {
     min-width: 120px;
@@ -1052,6 +1054,62 @@ header .dashboard .contacts-container .background-services {
   }
   .brands .brands__list-item {
     flex: 0 0 280px;
+  }
+  body {
+    display: flex;
+    justify-content: end;
+  }
+  body header {
+    background-color: rgb(248, 248, 248);
+  }
+  body .main__container {
+    width: 1132px;
+  }
+  body .menu-container {
+    margin-left: 20px;
+  }
+  body .menu-container .menu-container__btn--hidden-lg {
+    display: none;
+  }
+  body .menu-container .menu-container__logo {
+    display: none;
+  }
+  body .menu-container h1 {
+    display: block;
+  }
+  body .contacts-container__button-container {
+    background-color: rgb(248, 248, 248) !important;
+  }
+  body .main-content .main-content__heading {
+    display: none;
+  }
+  body .main-content__navigation-item {
+    min-width: 210px;
+    font-size: 12px;
+  }
+  body .main-content__heading-line {
+    left: 320px;
+    transform: translateY(-88px);
+  }
+  body .content-container .main-img__block {
+    width: 500px;
+    height: 363px;
+  }
+  body .left-menu {
+    display: block;
+    width: 320px;
+  }
+  body .left-menu .sidebar {
+    box-shadow: none;
+  }
+  body .brands .brands__list--hidden-xs {
+    justify-content: start;
+  }
+  body .brands__list-item {
+    flex: 0 0 215px !important;
+  }
+  body .technic .technic__list-item {
+    flex: 0 0 230px;
   }
 }
 /* slider end */
