@@ -29,8 +29,7 @@ header .dashboard {
   min-width: 320px;
   height: 88px;
   padding: 18px 16px;
-  background-color: rgb(255, 255, 255);
-  border-bottom: 1px solid rgba(65, 246, 216, 0.24);
+  border-bottom: 1px solid rgb(217, 255, 245);
 }
 header .dashboard .menu-container {
   display: flex;
@@ -99,7 +98,7 @@ header .dashboard .contacts-container__button-container {
   align-items: center;
   max-width: 178px;
   gap: 9px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: white;
   border: none;
   cursor: pointer;
 }
@@ -107,7 +106,6 @@ header .dashboard .contacts-container__button-text {
   font-family: "TT Lakes Medium";
   font-size: 16px;
   font-weight: 500;
-  color: rgb(27, 28, 33);
 }
 header .dashboard .contacts-container__img-background {
   width: 40px;

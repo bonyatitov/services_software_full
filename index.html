@@ -19,11 +19,11 @@
         </div>
         <div class="contacts-container">
           <button class="contacts-container__link--hidden-xs" id="button-phone">
-            <img src="img/phone-menu.svg" alt="Позвонить по номеру" class="contacts-container__img">
+            <img src="img/phone-menu.svg" alt="Оставить заявку" class="contacts-container__img">
           </button>
-          <a href="#" class="contacts-container__link--hidden-xs">
-            <img src="img/message-menu.svg" alt="Перейти в мессенджер" class="contacts-container__img">
-          </a>
+          <button href="#" class="contacts-container__link--hidden-xs call_back" id="back-coll-btn">
+            <img src="img/message-menu.svg" alt="Обратный звонок" class="contacts-container__img">
+          </button>
           <a href="#" class="contacts-container__link--hidden-xs">
             <img src="img/profile-menu.svg" alt="Войти в профиль" class="contacts-container__img">
           </a>
@@ -518,11 +518,11 @@
               <button class="contacts__link-phone btn" id="butto-phone-menu">
                 <img src="img/phone-menu.svg" alt="Телефон" class="contacts__img-phone">
               </button>
-              <a href="#" class="contacts__link-messanger btn">
-                <img src="img/message-menu.svg" alt="Месенджер" class="contacts__img-messanger">
-              </a>
+              <button class="contacts__link-messanger btn call_back">
+                <img src="img/message-menu.svg" alt="Обратный звонок" class="contacts__img-messanger">
+              </button>
               <a href="#" class="contacts__link-user btn">
-                <img src="img/profile-menu.svg" alt="Месенджер" class="contacts__img-messanger">
+                <img src="img/profile-menu.svg" alt="" class="contacts__img-messanger">
               </a>
             </div>
             <p class="contacts__email">
@@ -568,7 +568,7 @@
           <label class="form__label">
             <input type="text" name="name" id="name-input" class="form__input" placeholder="Имя">
           </label>
-          <label class="form__label">
+          <label class="form__label-phone">
             <input type="tel" name="phone" id="phone-input" class="form__input" placeholder="Телефон">
           </label>
           <label class="form__label">
