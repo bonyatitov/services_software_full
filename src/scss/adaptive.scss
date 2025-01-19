@@ -1,7 +1,15 @@
 @media (min-width: 320px) {
-  .menu-container__line--hidden-xs {
-    display: block;
+  .menu-container {
+    &__line--hidden-xs {
+      display: block;
+    }
+
+    h1 {
+      display: none;
+    }
   }
+
+
 
   .contacts-container {
     min-width: 120px;
@@ -71,10 +79,11 @@
 }
 
 @media (min-width: 400px) {
+  .swiper {
+    display: none;
+  }
+
   .brands {
-    .swiper {
-      display: none;
-    }
 
     .brands__list--hidden-xs {
       display: flex;
@@ -298,6 +307,7 @@
 
   }
 
+
 }
 
 @media (min-width: 1299px) {
@@ -324,6 +334,7 @@
     padding: 15px 34px 24px 34px;
   }
 
+
 }
 
 @media (min-width: 1440px) {
@@ -337,6 +348,91 @@
     .brands__list-item {
       flex: 0 0 280px;
     }
+  }
+
+  body {
+    display: flex;
+    justify-content: end;
+
+    header {
+      background-color: rgb(248, 248, 248);
+    }
+
+    .main__container {
+      width: 1132px;
+    }
+
+    .menu-container {
+      margin-left: 20px;
+      .menu-container__btn--hidden-lg {
+        display: none;
+      }
+
+      .menu-container__logo {
+        display: none;
+      }
+
+      h1 {
+        display: block;
+      }
+    }
+
+    .contacts-container {
+      &__button-container {
+        background-color:  rgb(248, 248, 248) !important;
+      }
+    }
+
+    .main-content {
+      .main-content__heading {
+        display: none;
+      }
+
+      &__navigation-item {
+        min-width: 210px;
+        font-size: 12px;
+      }
+
+      &__heading-line {
+        left: 320px;
+        transform: translateY(-88px);
+      }
+    }
+
+    .content-container {
+      .main-img__block {
+        width: 500px;
+        height: 363px;
+      }
+    }
+
+
+    .left-menu {
+      display: block;
+      width: 320px;
+
+      .sidebar {
+        box-shadow: none;
+      }
+    }
+
+    .brands {
+      .brands__list--hidden-xs {
+        justify-content: start;
+      }
+
+      &__list-item {
+        flex: 0 0 215px !important;
+      }
+    }
+
+    .technic {
+      .technic__list-item {
+        flex: 0 0 230px;
+      }
+    }
+    
+
   }
 }
 
@@ -353,6 +449,8 @@
   .open-brands__btn {
     display: none;
   }
+
+
 }
 
 @media (min-width: 768px) and (max-width: 1119px) {
